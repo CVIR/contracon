@@ -1,4 +1,4 @@
-## Exemplar-Free Continual Transformer with Convolutions [[Paper]](https://arxiv.org/pdf/2308.11357.pdf) [[Website]](https://cvir.github.io/contracon/)
+## Exemplar-Free Continual Transformer with Convolutions [[Paper]](https://arxiv.org/pdf/2308.11357.pdf) [[Website]](https://cvir.github.io/projects/contracon)
 
 This repository contains the implementation details of our Exemplar-Free Continual Transformer with Convolutions (ConTraCon) approach for continual learning with transformer backbone.
 
