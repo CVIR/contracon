@@ -8,7 +8,7 @@ Anurag Roy, Vinay Verma, Sravan Voonna, Kripabandhu Ghosh, Saptarshi Ghosh, Abir
 If you use the codes and models from this repo, please cite our work. Thanks!
 
 ```
-@InProceedings{Singh_2021_CVPR,
+@InProceedings{roy_2023_ICCV,
     author    = {Roy, Anurag and Verma, Vinay and Voonna, Sravan and Ghosh, Kripabandhu and Ghosh, Saptarshi and Das, Abir},
     title     = {Exemplar-Free Continual Transformer with Convolutions},
     booktitle = {International Conference on Computer Vision (ICCV)},
