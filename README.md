@@ -2,7 +2,7 @@
 
 This repository contains the implementation details of our Exemplar-Free Continual Transformer with Convolutions (ConTraCon) approach for continual learning with transformer backbone.
 
-Anurag Roy, Vinay Verma, Sravan Voonna, Kripabandhu Ghosh, Saptarshi Ghosh, Abir Das, "Exemplar-Free Continual Transformer with Convolutions"
+Anurag Roy, Vinay K. Verma, Sravan Voonna, Kripabandhu Ghosh, Saptarshi Ghosh, Abir Das, "Exemplar-Free Continual Transformer with Convolutions"
  
 
 If you use the codes and models from this repo, please cite our work. Thanks!

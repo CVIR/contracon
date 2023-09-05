@@ -47,9 +47,7 @@ class FCBlock_SVD(nn.Module):
 
 
     def update_global(self, task_id):
-        # self.fc.eval()
         self.global_fcblk[task_id] = copy.deepcopy(self.fc)
-        # self.fc.train()
         self.fc.reset_parameters()
 
         
@@ -321,14 +319,8 @@ class Mtx_fc(nn.Module):
 
         self.conv_list = ModuleList()
         self.global_sk_wt = {}
-        self.sk_wt = None
-        # self.global_sk_wt2 = {}
-        # self.sk_wt2 = None
-        # for i in range(self.num_heads):
-        #     self.conv_list.append(nn.Conv2d(1, self.conv_channels, self.ker_size, padding=self.padding, stride=self.stride, dilation=self.dilation).cuda())
+        self.sk_wt = None        
         
-        
-        # self.sk_wt = nn.Parameter(torch.randn(4, 1, 1).cuda())
         self.fin = fin
         self.fout = fout
         self.global_conv_list = {}
@@ -383,11 +375,9 @@ class Mtx_fc(nn.Module):
         all_head_size = input_shape[0]
         assert(all_head_size%self.num_heads == 0)
         mat = mat.view((self.num_heads, int(all_head_size/self.num_heads), mat.shape[1]))
-        # print(mat.shape)
         out = torch.zeros_like(mat)
         
         for i in range(mat.shape[0]):
-            # out[i] = torch.max(conv_list[i](mat[i].unsqueeze(0).unsqueeze(1)).squeeze(), dim = 0)[0]
             try:
                 out[i] = conv_list[i](mat[i].unsqueeze(0).unsqueeze(1)).squeeze()
             except:
